@@ -9,6 +9,7 @@ import {
 } from '@angular/forms';
 import { UserServiceService } from '../../services/user-service.service';
 import { User } from '../../model/user';
+// import { AlertifyService } from '../../services/alertify.service';
 
 @Component({
   selector: 'app-user-register',
@@ -23,7 +24,8 @@ export class UserRegisterComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private userService: UserServiceService
-  ) {}
+  ) //private alertifyjs: AlertifyService
+  {}
 
   ngOnInit() {
     //this.registrationForm = new FormGroup(
