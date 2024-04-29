@@ -18,7 +18,10 @@ import { PropertyDetailComponent } from './property/property-detail/property-det
 import { UserRegisterComponent } from './user/user-register/user-register.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserServiceService } from './services/user-service.service';
+import { AuthService } from './services/auth.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { AlertifyService } from './services/alertify.service';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 const appRoutes: Routes = [
   { path: '', component: PropertyListComponent },
@@ -48,12 +51,15 @@ const appRoutes: Routes = [
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
   ],
   providers: [
     UserServiceService,
     //AlertifyService,
     HousingService,
     provideClientHydration(),
+    AuthService,
   ],
   bootstrap: [AppComponent],
 })
