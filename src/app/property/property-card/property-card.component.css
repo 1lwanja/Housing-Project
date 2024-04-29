@@ -1,5 +1,20 @@
-.img-wrapper {
+.card {
+  min-height: 400px;
+}
+
+.card-body h1 {
+  font-family: fantasy;
+  color: #0069d9;
+}
+
+.font-highlight {
+  font-style: italic;
+  color: red;
+}
+
+.card-img-wrapper {
   overflow: hidden;
+  position: relative;
 }
 
 .card:hover img {
@@ -19,7 +34,7 @@
 
 .member-icons {
   position: absolute;
-  bottom: -30%;
+  bottom: -10%;
   left: 0;
   right: 0;
   margin-right: auto;
